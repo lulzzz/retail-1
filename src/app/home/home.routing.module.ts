@@ -8,14 +8,14 @@ import { IndexComponent } from './index/index.component';
 const routes: Routes = [
   {
     path: '', component: HomeComponent,
-    // canActivate: [AuthGuardService],
-    // children: [{
-    //   path: '',
-    //   canActivateChild: [AuthGuardService],
-    //   children: [
-    //     { path: '', component: IndexComponent },
-    //   ]
-    // }]
+    canActivate: [AuthGuardService],
+    children: [{
+      path: '',
+      canActivateChild: [AuthGuardService],
+      children: [
+        { path: '', component: IndexComponent },
+      ]
+    }]
   }
 ];
 

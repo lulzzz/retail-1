@@ -30,13 +30,16 @@ export class LoginComponent implements OnInit {
   }
 
   protected doLogin(): void {
+    this.authService.Authenticate(this.username, "");
     this.router.navigate(['/']);
     // this.accountService.ManagerLogin(this.username, this.password, {
     //   next: (res) => {
-    //     this.authService.Authenticate(this.username, res.token);
+    //     // this.authService.Authenticate(this.username, res.token);
+    //     this.authService.Authenticate(this.username, "");
     //     this.router.navigate(['/']);
     //   },
     //   error: (code, message, stacktrace) => {
+    //     alert("登录失败");
     //     // this.alertService.alert({ title: `登录失败 ${code} `, content: `${message ? message : ''} ${stacktrace ? stacktrace : ''}`, style: 'warning' });
     //   }
     // });
