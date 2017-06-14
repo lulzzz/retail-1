@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
-import { NgxUIModule } from '@swimlane/ngx-ui';
+// import { NgxUIModule } from '@swimlane/ngx-ui';
 
 import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { ModalModule } from 'ngx-bootstrap/modal';
@@ -15,7 +15,7 @@ import { ModalModule } from 'ngx-bootstrap/modal';
     FormsModule,
     RouterModule,
     NgxDatatableModule,
-    NgxUIModule,
+    // NgxUIModule,
     CollapseModule.forRoot(),
     ModalModule.forRoot()
   ],
@@ -24,7 +24,7 @@ import { ModalModule } from 'ngx-bootstrap/modal';
     FormsModule,
     RouterModule,
     NgxDatatableModule,
-    NgxUIModule,
+    // NgxUIModule,
     CollapseModule,
     ModalModule
   ]

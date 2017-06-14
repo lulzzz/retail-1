@@ -1,3 +1,67 @@
-<p>
-  login works!
-</p>
+<!--<div class="login-page">-->
+<!--<div class="row">-->
+<!--<div class="col-md-4 push-md-4">-->
+<!--<img src="assets/images/logo.png" width="150px" class="user-avatar" />-->
+<!--<h1>顺利付管理平台</h1>-->
+<!--<form #loginForm="ngForm">-->
+<!--<div class="form-content">-->
+<!--<div class="form-group">-->
+<!--<ngx-input type="text" [label]="'用户名'" [hint]="'用户名长度最短4位'" name="username" [(ngModel)]="username" [required]="true" [minlength]="4" ></ngx-input>-->
+<!--</div>-->
+<!--<div class="form-group">-->
+<!--<ngx-input type="password" [label]="'密码'" [hint]="'密码长度最短6位'" name="password" [(ngModel)]="password" [required]="true" [minlength]="6"></ngx-input>-->
+<!--</div>-->
+<!--</div>-->
+<!--<button type="submit" class="btn rounded-btn" [disabled]="!loginForm.form.valid" (click)="doLogin()">登录</button>-->
+<!--</form>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+
+<div class="c-login-wrapper">
+  <div class="d-flex justify-content-center c-login-container">
+    <div class="card c-login-box">
+      <div class="card-block">
+        <div class="text-center c-login-header">
+          <img src="../../../assets/images/logo.png" class="rounded-circle"/>
+          <h3 class="card-title" style="display:inline">顺利付管理平台</h3>
+        </div>
+        <hr/>
+        <form #loginForm="ngForm">
+          <div class="form-group row">
+            <div class="col-12">
+              <input class="form-control " type="text" placeholder="用户名" name="username" [(ngModel)]="username"
+                     [required]="true" [minlength]="4">
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-12">
+              <input class="form-control" type="password" placeholder="密码" name="password" [(ngModel)]="password"
+                     [required]="true" [minlength]="6">
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-12">
+              <label class="form-label">
+                <input type="checkbox" name="remember me" class="">
+                记住我
+              </label>
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary" [disabled]="!loginForm.form.valid" (click)="doLogin()">登 录
+              </button>
+            </div>
+          </div>
+        </form>
+        <div class="row c-copy-right">
+          <div class="col-12 text-center">
+            <p>&copy;中铁顺利科技有限公司 2017. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

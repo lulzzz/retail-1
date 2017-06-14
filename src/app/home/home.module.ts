@@ -5,6 +5,7 @@ import { HomeRoutingModule } from './home.routing.module';
 import { HomeComponent } from './home.component';
 
 import { SharedUiModule } from '../shared/shared-ui.module';
+import { IndexComponent } from './index/index.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { SharedUiModule } from '../shared/shared-ui.module';
     SharedUiModule
   ],
   declarations: [
-    HomeComponent
+    HomeComponent,
+    IndexComponent
   ]
 })
 

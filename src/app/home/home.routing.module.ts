@@ -2,19 +2,20 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { HomeComponent } from './home.component';
-import { AuthGuardService } from '../shared/services/auth.guard.service'
+import { AuthGuardService } from '../shared/services/auth.guard.service';
+import { IndexComponent } from './index/index.component';
 
 const routes: Routes = [
   {
     path: '', component: HomeComponent,
-    canActivate: [AuthGuardService],
-    children: [{
-      path: '',
-      canActivateChild: [AuthGuardService],
-      children: [
-        // { path: '', loadChildren: './index/index.module#IndexModule' },
-      ]
-    }]
+    // canActivate: [AuthGuardService],
+    // children: [{
+    //   path: '',
+    //   canActivateChild: [AuthGuardService],
+    //   children: [
+    //     { path: '', component: IndexComponent },
+    //   ]
+    // }]
   }
 ];
 
