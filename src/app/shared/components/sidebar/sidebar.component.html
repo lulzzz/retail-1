@@ -1,0 +1,56 @@
+<nav class="sidebar" [ngClass]="{sidebarPushRight: isActive}">
+    <ul class="list-group">
+        <a routerLink="/" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-fw fa-dashboard"></i>&nbsp;控制台
+        </a>
+        <div class="nested-menu">
+            <a class="list-group-item" (click)="addExpandClass('vendor')">
+                <span><i class="fa fa-plus"></i> &nbsp; 商户管理</span>
+            </a>
+            <li class="nested" [class.expand]="showMenu === 'vendor'">
+                <ul class="submenu">
+                    <li>
+                        <a routerLink="/vendor/list" [routerLinkActive]="['router-link-active']"><span>商户列表</span></a>
+                    </li>
+                </ul>
+            </li>
+        </div>
+        <div class="nested-menu">
+            <a class="list-group-item" (click)="addExpandClass('order')">
+                <span><i class="fa fa-plus"></i> &nbsp; 订单查询</span>
+            </a>
+            <li class="nested" [class.expand]="showMenu === 'order'">
+                <ul class="submenu">
+                    <li>
+                        <a routerLink="/order/charge/list"><span>收款订单</span></a>
+                    </li>
+                </ul>
+            </li>
+        </div>
+        <div class="nested-menu">
+            <a class="list-group-item" (click)="addExpandClass('report')">
+                <span><i class="fa fa-plus"></i> &nbsp; 报表查询</span>
+            </a>
+            <li class="nested" [class.expand]="showMenu === 'report'">
+                <ul class="submenu">
+                    <li>
+                        <a routerLink="/report/charge/list"><span>收款报表</span></a>
+                    </li>
+                </ul>
+            </li>
+        </div>
+        <div class="nested-menu">
+            <a class="list-group-item" (click)="addExpandClass('manager')">
+                <span><i class="fa fa-plus"></i> &nbsp; 管理账户</span>
+            </a>
+            <li class="nested" [class.expand]="showMenu === 'manager'">
+                <ul class="submenu">
+                    <li>
+                        <a href="javascript:void(0)"><span>角色</span></a>
+                        <a href="javascript:void(0)"><span>账户</span></a>
+                    </li>
+                </ul>
+            </li>
+        </div>
+    </ul>
+</nav>

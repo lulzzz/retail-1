@@ -1,0 +1,15 @@
+{
+    "Service": {
+        "Default": {
+            "Account": {
+                "ManagerLogin": {
+                    "Name": "登录",
+                    "StatusCode": {
+                        "4": "用户名或密码错误.",
+                        "5": "用户名或密码错误."
+                    }
+                }
+            }
+        }
+    }
+}
