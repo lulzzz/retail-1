@@ -1,3 +1,4 @@
+<<<<<<< a570c0cf0b23b075ce134630bb69efc07d3361fd
 $topnav-background-color: #38f;
 .topnav {
     border-radius: 0;
@@ -52,21 +53,31 @@ $topnav-background-color: #38f;
         &:last-child {
             border-bottom: none;
         }
+=======
+$topnav-background-color: #fff;
+.header .navbar {
+    margin-left: 235px;
+    background: $topnav-background-color !important;
+    height: 60px;
+    line-height: 60px;
+    box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.05);
+    .nav-link {
+        color: #000;
+>>>>>>> 修改头部和侧边栏
     }
-    .media-body {
-        h5 {
-            font-size: 13px;
-            font-weight: 600;
+    .dropdown-menu{
+        .dropdown-item{
+            height: 35px;
+            line-height: 35px;
         }
-        .small {
-            margin: 0;
-        }
-        .last {
-            font-size: 12px;
-            margin: 0;
-        }
+
     }
+<<<<<<< a570c0cf0b23b075ce134630bb69efc07d3361fd
 }
 .header .navbar {
     background: $topnav-background-color !important;
 }
+=======
+
+}
+>>>>>>> 修改头部和侧边栏

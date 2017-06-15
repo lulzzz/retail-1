@@ -1,11 +1,17 @@
+<<<<<<< a570c0cf0b23b075ce134630bb69efc07d3361fd
 $topnav-background-color: #38f;
 $slider-color: #ffffff;
 
+=======
+$topnav-background-color: #10a2e9;
+$color-deep: #0a7bb9;
+$color-gray-secondary:#fafafa;
+>>>>>>> 修改头部和侧边栏
 .sidebar{
     border-radius: 0;
     position: fixed;
     z-index: 1000;
-    top: 55px;
+    top: 0px;
     left: 235px;
     width: 235px;
     margin-left: -235px;
@@ -21,18 +27,54 @@ $slider-color: #ffffff;
         -ms-transition: all 0.2s ease-in-out;
          -o-transition: all 0.2s ease-in-out;
             transition: all 0.2s ease-in-out;
+    .c-header {
+        height: 60px;
+        background-color: $topnav-background-color;
+        & > img {
+            margin-left: 15px;
+            border-radius: 50%;
+            -webkit-box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.05);
+            box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.05);
+            background-color: $color-deep;
+            &:hover {
+                -moz-transition: all 0.5s ease-in-out;
+                -webkit-transition: all 0.5s ease-in-out;
+                -o-transition: all 0.5s ease-in-out;
+                -ms-transition: all 0.5s ease-in-out;
+                transition: all 0.5s ease-in-out;
+                -moz-transform: rotateY(-360deg);
+                -webkit-transform: rotateY(-360deg);
+                -o-transform: rotateY(-360deg);
+                -ms-transform: rotateY(-360deg);
+                transform: rotateY(-360deg);
+            }
+            }
+            & > h3 {
+                display: inline-block;
+                vertical-align: -5px;
+                margin-top: 15px;
+                margin-left: 15px;
+                color: $color-gray-secondary;
+                font-size: 1.7em;
+            }
+    }
     // border-top: 1px solid rgba(255,255,255,0.3);
     .list-group{
         a.list-group-item{
             background: $topnav-background-color;
             border: 0;
             border-radius: 0;
+<<<<<<< a570c0cf0b23b075ce134630bb69efc07d3361fd
             color: $slider-color;
+=======
+            color: #fff;
+>>>>>>> 修改头部和侧边栏
             text-decoration: none;
         }
         a:hover{
             background: darken($topnav-background-color, 5%);
             color: #fff;
+            text-decoration: none;
         }
         a.router-link-active{
             background: darken($topnav-background-color, 5%);
