@@ -1,4 +1,6 @@
-$topnav-background-color: #222;
+$topnav-background-color: #38f;
+$slider-color: #ffffff;
+
 .sidebar{
     border-radius: 0;
     position: fixed;
@@ -25,7 +27,7 @@ $topnav-background-color: #222;
             background: $topnav-background-color;
             border: 0;
             border-radius: 0;
-            color: #999;
+            color: $slider-color;
             text-decoration: none;
         }
         a:hover{
@@ -47,7 +49,7 @@ $topnav-background-color: #222;
             height : 50px;
             margin-bottom:0;
             a{
-                color : #999;
+                color : $slider-color;
                 text-decoration : none;
                 font-weight:400;
                 background:$topnav-background-color;
@@ -76,7 +78,7 @@ $topnav-background-color: #222;
                     background-color: $topnav-background-color;
                     border: 0 solid transparent;
                     a{
-                        color:#999;
+                        color:$slider-color;
                     }
                     a:hover{
                         color:#FFF;
@@ -122,6 +124,6 @@ $topnav-background-color: #222;
 @media screen and (max-width: 992px) {
     .sidebar {
         top: 54px;
-        left: 0px;
+        left: 0;
     }
 }
