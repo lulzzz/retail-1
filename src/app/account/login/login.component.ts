@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 import { AccountService } from "../../shared/services/retail_services/account.service";
 import { AuthService } from "../../shared/services/auth.service";
 
-// import { AlertService } from '@swimlane/ngx-ui';
+import { AlertService } from '@swimlane/ngx-ui';
 
 @Component({
   selector: 'app-account-login',
@@ -17,15 +17,15 @@ export class LoginComponent implements OnInit {
   protected password: string = '';
 
   constructor(protected router: Router,
-              // protected alertService: AlertService,
+              protected alertService: AlertService,
               protected accountService: AccountService, protected authService: AuthService) {
   }
 
   ngOnInit() {
     if (this.authService.IsAuthenticated) {
-      // this.alertService.alert({ title: '已登录', content: '账户已登录, 请先注销', style: 'warning' }).subscribe({
-      //   next: () => { this.router.navigate(['/']) },
-      // });
+      this.alertService.alert({ title: '已登录', content: '账户已登录, 请先注销', style: 'warning' }).subscribe({
+        next: () => { this.router.navigate(['/']) },
+      });
     }
   }
 

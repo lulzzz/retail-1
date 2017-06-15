@@ -16,11 +16,8 @@ import { ChineseDivisionService } from './services/chinese.division.service';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
-// import { NgxUIModule } from '@swimlane/ngx-ui';
+import { NgxUIModule } from '@swimlane/ngx-ui';
 
-import {ToastService} from './modules/toast/toast.service';
-// import {ToastBoxComponent} from './modules/toast/toast-box.component';
-// import {ToastComponent} from './modules/toast/toast.component';
 
 export function createTranslateLoader(http: Http) {
     return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -30,7 +27,7 @@ export function createTranslateLoader(http: Http) {
     imports: [
         CommonModule,
         RouterModule,
-        // NgxUIModule,
+        NgxUIModule,
         TranslateModule.forRoot({
             loader: {
                 provide: TranslateLoader,
@@ -57,8 +54,7 @@ export class SharedServicesModule {
                 AuthService,
                 AuthGuardService,
                 TranslateService,
-                ChineseDivisionService,
-                ToastService
+                ChineseDivisionService
             ]
         };
     }
