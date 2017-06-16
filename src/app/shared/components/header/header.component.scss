@@ -15,4 +15,15 @@ $topnav-background-color: #fff;
         }
     }
 }
-
+@media screen and (max-width: 992px){
+  .header .navbar {
+    margin-left: 0px;
+    button {
+      width: 56px;
+      height: 38px;
+    }
+    .navbar-nav{
+      margin-right: 0px;
+    }
+  }
+}
