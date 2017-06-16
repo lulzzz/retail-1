@@ -2,6 +2,9 @@ $topnav-background-color: #10a2e9;
 $color-deep: #0a7bb9;
 $color-gray-secondary:#fafafa;
 $slider-color:#fff;
+a{
+    text-decoration: none;
+}
 .sidebar{
     border-radius: 0;
     position: fixed;
@@ -148,6 +151,9 @@ $slider-color:#fff;
                     display: block;
                     span {
                         margin-left: 36px;
+                    }
+                    &:active &:focus{
+                        text-decoration: none;
                     }
                 }
             }
